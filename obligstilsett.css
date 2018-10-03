@@ -1,0 +1,149 @@
+body{
+    margin-left: -12px;
+    width: 1000px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 25% 75%;
+    grid-template-areas: 
+    "header header"
+    "aside main"
+    "footer footer";
+    background-image: linear-gradient(110deg, #98e5e9, #393b42);
+    border: 3px solid black;
+}
+
+header{
+    position: fixed;
+    width: 1310px;
+    margin-top: -12px;
+    margin-left: -170px;
+    background-image: url(bakgrunn.jpg);
+    grid-area: header;
+    border: 3px solid black;
+    display: flex;
+    justify-content:space-around;
+    align-items: baseline;
+    z-index: 999; /*z-index (dybgde)...*/
+}
+
+aside{
+    border-right: 3px solid black;
+    margin-top: 74px;
+    grid-area: aside;
+    grid-template-columns: 1fr 2fr;
+    padding: 5px;
+    text-align: center;
+}
+
+main{
+    grid-area: main;
+    margin-top: 65px;
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+    /*justify-content: flex-start;*/
+    align-items: baseline;
+}
+
+main article{
+    min-width: 300px;
+    max-width: 500px;
+    width: 80%;
+    text-align: justify;
+}
+
+footer{
+    width: 1230px;
+    margin-bottom: -5px;
+    margin-left: -140px;
+    grid-area: footer;
+    text-align: center;
+    padding: 25px;
+    background-image: linear-gradient(110deg,#3b3b3b, black);
+}
+
+footer a{
+    color: white;
+    font-size: 125%;
+    text-decoration: none;
+}
+
+footer a:hover{
+    text-decoration: underline;
+    box-shadow: 0 0 8px 1px white;
+    padding: 10px;
+}
+
+footer p{
+    color: white;
+    font-size: 125%;
+}
+
+article{
+  /*  border: 3px solid black;*/
+    margin: 10px;
+    border-bottom: 3px solid black;
+}
+
+img{
+    width: 250px;
+    height: auto;
+}
+
+nav{
+    padding-left: 300px;
+}
+
+nav a{
+    padding-right: 20px;
+    text-decoration: none;
+    font-size: 24px;
+    color: black;
+    
+}
+
+nav > a:hover{
+    background-color: lightgray;
+    border: 1px solid black;
+    box-shadow: 0 0 8px 1px black;
+}
+
+.tull{
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 0;
+    overflow: hidden;
+    max-width: 100%;
+    box-shadow:14px 18px 163px -8px rgba(255,255,255,1);
+}
+
+.tull iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+h1{
+    color: white;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    padding-left: 100px;
+}
+
+p{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+ul li {
+    list-style: none;
+    text-align: left;
+}
+
+.knapp a{
+    text-decoration: none;
+    background-color: grey;
+    color: black;
+    border: 1px solid black;
+    padding: 5px;
+}
